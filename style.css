@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+span, a, label{
+    display: inline-block;
+}
+.box {
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    background-image: url(Aka.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -150px;
+}
+.h2 {
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: text 1s linear alternate infinite;
+}
+.h1 {
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: text 1s linear alternate infinite;
+}
+@keyframes text {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.img {
+    width: 100px;
+    animation: anim 6s linear forwards infinite;
+}
+@keyframes anim {
+    0% {
+    transform: translateY(var(--i)) translateX(var(--a));
+    }
+    100% {
+    transform: translateY(2000px);
+    }
+}
+@media(max-width:2000px) {
+    .h2 {
+        display: none;
+    }
+}
+@media(max-width:1050px) {
+    .box {
+        height: 95dvh;
+    }
+}
+@media(max-width:800px) {
+    .h2 {
+        display: block;
+    }
+    .h1 {
+        display: none;
+    }
+}
+@media(max-width:700px) {
+    .box {
+        height: 88dvh;
+    }
+    .h2 {
+        font-size: 25px;
+    }
+}
+@media(max-width:650px) {
+    .box {
+        height: 83dvh;
+    }
+    .h2 {
+        font-size: 20px;
+    }
+}
+@media(max-width:577px) {
+    .box {
+        height: 80dvh;
+    }
+    .h2 {
+        font-size: 19px;
+    }
+}
+@media(max-width:464px) {
+    .box {
+        height: 77dvh;
+    }
+    .img {
+        width: 50px;
+    }
+    .h2 {
+        font-size: 17px;
+    }
+}
+@media(max-width:410px) {
+    .box {
+        height: 68dvh;
+    }
+    .img {
+        width: 50px;
+    }
+    .h2 {
+        font-size: 16px;
+    }
+}
+@media(max-width:385px) {
+    .box {
+        height: 63dvh;
+    }
+    .img {
+        width: 50px;
+    }
+    .h2 {
+        font-size: 15px;
+    }
+}
+@media(max-width:340px) {
+    .box {
+        height: 54dvh;
+    }
+    .img {
+        width: 50px;
+    }
+    .h2 {
+        font-size: 15px;
+    }
+}
+@media(max-width:320px) {
+    .box {
+        height: 49dvh;
+    }
+    .img {
+        width: 50px;
+    }
+    .h2 {
+        font-size: 15px;
+    }
+}
+@media(max-width:290px) {
+    .box {
+        height: 40dvh;
+        background-position: 0 -30px;
+    }
+    .img {
+        width: 50px;
+    }
+    .h2 {
+        font-size: 12px;
+    }
+}
